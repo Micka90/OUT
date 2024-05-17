@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import "../styles/SearchBar.css";
 function SearchBar({ searchInput, setSearchInput }) {
+    const navigate = useNavigate();
     return (
         <form className="search-container">
             <input
