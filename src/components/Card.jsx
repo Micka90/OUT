@@ -2,11 +2,12 @@ import { PropTypes } from "prop-types";
 import { useNavigate } from "react-router-dom";
 import "../styles/card.css";
 
+
 function Card({ activity }) {
   const navigate = useNavigate();
   return (
     <div className="card-container" onClick={() => navigate("/get-out")}>
-      <img src={`/src/${activity.img}`} />
+      <img src={activity.img} />
       <div className="card-desc">
         <p className="activity-cat">
           {activity.category === "nature" && (
